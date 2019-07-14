@@ -1,0 +1,15 @@
+###zuul网关配置
+zuul:
+  routes:
+  ###自定义路由，该名字可以自定义
+    api-a:
+      ###指定拦截地址
+      path: /api-member/**
+      ###指定服务名
+      serviceId: cloud-provide-1
+  ###自定义路由，该名字可以自定义
+    api-b:
+      ###指定拦截地址
+      path: /api-order/**
+      ###指定服务名
+      serviceId: cloud-consumer-1
